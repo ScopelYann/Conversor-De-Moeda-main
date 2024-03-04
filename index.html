@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor</title>
+</head>
+
+<body>
+    <img class="Logo"
+        src="imgs/kisspng-currency-exchange-rate-foreign-exchange-market-com-currency-5acb58fe3b3696.5346034015232760302426.png"
+        alt="troca/conversão de moeda" width="150" height="150">
+    <div class="container">
+        <label><!--Etiqueta de converção-->
+            Converter <span>de</span>
+            <input type="text" placeholder="R$ Real Brasileiro" disabled>
+        </label>
+
+        <label>
+            Converter <span>para</span><!--Campo de Selecionador de conversao-->
+            <select id="campo-second" onchange="changeconvert()">
+                <option value="US$ Dólar Americano"><span>US$ </span>Dólar Americano</option>
+                <option value="£ Libra"><span>£ </span>Libra</option>
+                <option value="€ Euro"><span>€ </span>Euro</option>
+                <option value="₿ Bitcoin"><span>₿ </span>Bitcoin</option>
+            </select>
+        </label>
+
+
+        <label>
+            <span>Valor</span><!--Campo Para Valor da conversao-->
+            <input type="text" id="txtmail" placeholder="R$ 0,00">
+        </label>
+
+        <button onclick="convertUS$()">Converter</button><!--Botao para conversao acontecer-->
+        <div class="convert-area"><!--Area de conversao-->
+            <img src="imgs/brasil 2.svg" alt="logo-pais-brasil" class="paises"><!--Imagem do pais brasil-->
+            <p class="name-money">Real</p><!--Nome do dinheiro-->
+            <p class="money-convert">R$ 0,00</p><!--Valor Em que foi colocado no input valor-->
+
+            <img src="imgs/Vector.svg" alt="seta-indicadora">
+
+            <img src="imgs/estados-unidos (1) 1.svg " class="paises" alt="logo-paises"><!--moeda brasileira sera convertida para este pais-->
+            <p class="name-money">Dólar Americano</p><!--Nome Da Moeda -->
+            <p class="money-convert">US$ 0.00</p><!--Valor Da conversao final-->
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
