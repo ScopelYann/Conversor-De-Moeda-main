@@ -5,6 +5,8 @@ let img = document.querySelectorAll(".paises")
 let moneyConvert = document.querySelectorAll(".money-convert")
 let nomeMoeda = document.querySelectorAll(".name-money")
 
+
+
 function changeconvert(){
     conceptName2 = selecttwo.options[selecttwo.selectedIndex].text;
         
@@ -42,7 +44,6 @@ function changeconvert(){
         moneyConvert[1].innerHTML = "€ " + format
     }
 }
-
 function convertUS$(){
     let val = parseFloat(input.value)
     let format = val.toLocaleString('pt-br', { minimumFractionDigits: 2, maximumFractionDigits: 2 });

@@ -26,7 +26,7 @@ Este projeto consiste em um conversor de moeda simples, que permite converter va
 - Adicionar mais opções de moedas para conversão.
 - Melhorar a interface do usuário para uma experiência mais intuitiva.
 - Implementar validação de entrada para evitar erros de digitação.
-- Implementar uma API de atualização de moeda para o conversor não ficar desatualizado
+- Implementar uma API de atualização de moeda para o conversor não ficar desatualizado.
 
 ## Tecnologias Utilizadas
 
