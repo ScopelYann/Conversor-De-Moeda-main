@@ -91,6 +91,15 @@ body{
     bottom: 25px;
 }
 
+.convert-para{
+    position: relative;
+    right: 115px;
+
+}
+.Logo{
+    position: relative;
+    bottom: 60px;
+}
 input{
     width: 327px;
     height: 48px;
@@ -141,24 +150,10 @@ select {
     color: #555555;
     outline: none;
 }
-.convert-para{
-    position: relative;
-    right: 115px;
-
-}
-.Logo{
-    position: relative;
-    bottom: 60px;
-}
 label{
     color: #dbd8e3;
     font-size: 14px;
     font-weight: 400;
-    line-height: 18px;
-}
-span{
-    font-size: 14px;
-    font-weight: 700;
     line-height: 18px;
 }
 img{

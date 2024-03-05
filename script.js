@@ -53,7 +53,7 @@ function convertUS$(){
     }
 
     if (conceptName2 === "US$ Dólar Americano"){
-        let convercao = parseFloat(input.value / 4.97)
+        let convercao = parseFloat(input.value / 4.94)
         let format = convercao.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         moneyConvert[1].innerHTML = "US$ " + format  
 
