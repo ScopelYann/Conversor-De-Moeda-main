@@ -10,21 +10,28 @@
 
 <body>
     <img class="Logo"
-        src="imgs/kisspng-currency-exchange-rate-foreign-exchange-market-com-currency-5acb58fe3b3696.5346034015232760302426.png"
+        src="assets/kisspng-currency-exchange-rate-foreign-exchange-market-com-currency-5acb58fe3b3696.5346034015232760302426.png"
         alt="troca/conversão de moeda" width="150" height="150">
     <main class="container">
         <label><!--Etiqueta de converção-->
             Converter <b>de</b>
-            <input type="text" placeholder="R$ Real Brasileiro" disabled>
+            <select id="campo-one">
+                <option value="R$ Real Brasileiro"><span>R$ </span>Real Brasileiro</option>
+                <option value="US$ Dólar Americano"><span>US$ </span>Dólar Americano</option>
+                <option value="£ Libra"><span>£ </span>Libra</option>
+                <option value="€ Euro"><span>€ </span>Euro</option>
+                <option value="BitCoin"><span>₿ </span>Bitcoin</option>
+            </select>
         </label>
 
         <label>
             Converter <b>para</b><!--Campo de Selecionador de conversao-->
-            <select id="campo-second" onchange="changeconvert()">
+            <select id="campo-second">
                 <option value="US$ Dólar Americano"><span>US$ </span>Dólar Americano</option>
                 <option value="£ Libra"><span>£ </span>Libra</option>
                 <option value="€ Euro"><span>€ </span>Euro</option>
                 <option value="₿ Bitcoin"><span>₿ </span>Bitcoin</option>
+                <option value="R$ Real Brasileiro"><span>R$ </span>Real Brasileiro</option>
             </select>
         </label>
 
@@ -34,17 +41,18 @@
             <input type="text" id="txtmail" placeholder="R$ 0,00">
         </label>
 
-        <button onclick="convertUS$()">Converter</button><!--Botao para conversao acontecer-->
+        <button class="convertbutton">Converter</button><!--Botao para conversao acontecer-->
         <section class="convert-area"><!--Area de conversao-->
-            <img src="imgs/brasil 2.svg" alt="logo-pais-brasil" class="paises"><!--Imagem do pais brasil-->
+            <img src="assets/brasil 2.svg" alt="logo-pais-brasil" class="paises"><!--Imagem do pais brasil-->
             <p class="name-money">Real</p><!--Nome do dinheiro-->
-            <p class="money-convert">R$ 0,00</p><!--Valor Em que foi colocado no input valor-->
+            <p class="money-convert-prime">R$ 0,00</p><!--Valor Em que foi colocado no input valor-->
 
-            <img src="imgs/Vector.svg" alt="seta-indicadora">
+            <img src="assets/Vector.svg" alt="seta-indicadora">
 
-            <img src="imgs/estados-unidos (1) 1.svg " class="paises" alt="logo-paises"><!--moeda brasileira sera convertida para este pais-->
+            <img src="assets/estados-unidos (1) 1.svg " class="paises" alt="logo-paises"><!--moeda brasileira sera convertida para este pais-->
             <p class="name-money">Dólar Americano</p><!--Nome Da Moeda -->
-            <p class="money-convert">US$ 0.00</p><!--Valor Da conversao final-->
+            <p class="money-convert-second">US$ 0.00</p><!--Valor Maximo da conversão-->
+            <p class="money-convert-third">Min: 0.00</p><!--Valor Minimo da conversão-->
         </section>
     </main>
 </body>
